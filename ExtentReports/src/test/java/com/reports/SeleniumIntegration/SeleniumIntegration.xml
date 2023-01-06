@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite for TestNG / Extent Report">
+	<parameter name="url"
+		value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" />
+	<parameter name="userName" value="Admin" />
+	<parameter name="passWord" value="admin123" />
+	<parameter name="wait" value="3000" />
+	<test name="Orange HRM Test - Integeration">
+		<parameter name="browserName" value="Chrome" />
+		<classes>
+			<class name="com.reports.SeleniumIntegration.TestClass">
+				<methods>
+					<include name="testGoogle"></include>
+					<include name="testOrange"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Orange HRM Test with edge browser">
+		<parameter name="browserName" value="Edge" />
+		<classes>
+			<class name="com.testNG.New.ParameterOrangeHRM">
+				<methods>
+					<include name="launchApp"></include>
+					<include name="enterLoginDetail"></include>
+					<include name="VerifyLoginDetail"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Orange HRM My Info Test">
+		<parameter name="browserName" value="firefox" />
+		<classes>
+			<class name="com.testNG.New.ParameterOrangeHRM">
+				<methods>
+					<include name="launchApp"></include>
+					<include name="enterLoginDetail"></include>
+					<include name="NavigateToMyInfo"></include>
+					<include name="VerifyMyInfo"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

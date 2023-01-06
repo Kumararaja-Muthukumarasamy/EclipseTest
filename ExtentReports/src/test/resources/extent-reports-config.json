@@ -1,0 +1,13 @@
+{
+  "theme": "DARK",
+  "encoding": "utf-8",
+  "protocol": "HTTPS",
+  "timelineEnabled": false,
+  "offlineMode": true,
+  "thumbnailForBase64": false,
+  "documentTitle": "Title - Json Reports",
+  "reportName": "JSON REPORT",
+  "timeStampFormat": "MMM dd, yyyy HH:mm:ss a",
+  "js": "document.getElementsByClassName('logo')[0].style.display='none';",
+  "css": ".badge-primary{background-color:#fecd2f)}"
+}

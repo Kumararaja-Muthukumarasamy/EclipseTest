@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Extent Report And TestNG Suite]">
+  <listeners>
+    <listener class-name="com.reports.Listeners.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Extent Report And TestNG (failed)">
+    <classes>
+      <class name="com.reports.Listeners.LoginTest">
+        <methods>
+          <include name="yahooLogin"/>
+        </methods>
+      </class> <!-- com.reports.Listeners.LoginTest -->
+    </classes>
+  </test> <!-- Extent Report And TestNG (failed) -->
+</suite> <!-- Failed suite [Extent Report And TestNG Suite] -->

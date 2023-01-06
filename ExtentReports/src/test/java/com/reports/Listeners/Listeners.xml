@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Extent Report And TestNG Suite">
+	<listeners>
+		<listener class-name="com.reports.Listeners.Listeners"/>
+	</listeners>
+	<test name="Extent Report And TestNG ">
+		<classes>
+			<class name="com.reports.Listeners.LoginTest">
+				<methods>
+					<include name="gmailLogin"></include>
+					<include name="yahooLogin"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
